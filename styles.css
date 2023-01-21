@@ -3,3 +3,85 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.imagebox {
+    padding-left: 18px;
+    padding-top: 2px;
+}
+
+.imagein {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #292626;
+}
+
+.imageout {
+    font-family: impact;
+    color: rgb(95, 163, 219);
+    font-size: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    float: right;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: #292626;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 18px;
+  }
+  
+  .navbar a:hover {
+    color: rgb(95, 163, 219);
+  }
+  
+  .navbar a.current {
+    color: rgb(95, 163, 219);
+  }
+  
+  .navbar .icon {
+    display: none;
+    padding-top: 15px;
+  }
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:nth-of-type(2)) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.resize {position: relative;}
+    .navbar.resize a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.resize a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .navbar.resize a:not(.icon) {
+        padding-right: 55px;
+    }
+
+    .typewriter h1 {
+      font-size: 20px;
+    }
+  }
